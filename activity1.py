@@ -91,23 +91,23 @@ def game():
                 break
 
 
-            if count == 9:
+        if count == 9:
                 print("\nGAME OVER . \n") 
                 print("it's a tie !!!!!")
 
-            if turn == 'X':
-               turn = 'o'
-            else:
-                turn = 'X'
+        if turn == 'X':
+            turn = 'o'
+        else:
+            turn = 'X'
 
     restart = input("do you want to play again?(y/n)")
     if restart == "y" or restart == "Y":
         for key in board_keys:
             the_board[key] = " "
 
-            game()
+        game()
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
         game()        
 
 
